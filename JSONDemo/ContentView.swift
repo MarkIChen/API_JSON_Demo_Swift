@@ -10,12 +10,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack(spacing: 100) {
+                NavigationLink(destination: APIList()) {
+                    Text("Request API")
+                }
+            }
+            .navigationBarTitle("JSON Placeholder")
+        }
+        
+    }
+    
+    func trigger() {
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct APIList: View {
+//    var body: some View {
+//        VStack {
+//            HStack {
+//                ForEach 0..<4 {
+//                    Rectangle()
+//                        .frame(height: 20)
+//                }
+//                
+//            }
+//        }
+//    }
+//}
+
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        ContentView()
+//        APIList()
+//    }
+//}
