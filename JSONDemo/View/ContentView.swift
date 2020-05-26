@@ -26,23 +26,3 @@ struct ContentView: View {
     }
 }
 
-//struct APIList: View {
-//    var body: some View {
-//        VStack {
-//            HStack {
-//                ForEach 0..<4 {
-//                    Rectangle()
-//                        .frame(height: 20)
-//                }
-//                
-//            }
-//        }
-//    }
-//}
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-////        ContentView()
-//        APIList()
-//    }
-//}

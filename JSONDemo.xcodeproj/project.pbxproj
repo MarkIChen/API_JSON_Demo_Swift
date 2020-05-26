@@ -107,13 +107,10 @@
 		0A13D7572474D1D40009D243 /* JSONDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0A13D7D12476C20F0009D243 /* Module */,
+				0A13D7D02476C1F20009D243 /* View */,
 				0A13D7582474D1D40009D243 /* AppDelegate.swift */,
 				0A13D75A2474D1D40009D243 /* SceneDelegate.swift */,
-				0A13D75C2474D1D40009D243 /* ContentView.swift */,
-				0A13D78A2474D4A50009D243 /* APILsitView.swift */,
-				0A13D79224762CDD0009D243 /* ImageHandler.swift */,
-				0A13D79024762AF70009D243 /* DetailView.swift */,
-				0A13D78E24751A100009D243 /* GridView.swift */,
 				0A13D75E2474D1DB0009D243 /* Assets.xcassets */,
 				0A13D7632474D1DB0009D243 /* LaunchScreen.storyboard */,
 				0A13D7662474D1DB0009D243 /* Info.plist */,
@@ -146,6 +143,25 @@
 				0A13D77C2474D1DC0009D243 /* Info.plist */,
 			);
 			path = JSONDemoUITests;
+			sourceTree = "<group>";
+		};
+		0A13D7D02476C1F20009D243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A13D75C2474D1D40009D243 /* ContentView.swift */,
+				0A13D78A2474D4A50009D243 /* APILsitView.swift */,
+				0A13D79024762AF70009D243 /* DetailView.swift */,
+				0A13D78E24751A100009D243 /* GridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A13D7D12476C20F0009D243 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0A13D79224762CDD0009D243 /* ImageHandler.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JSONDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = MN2C8KDDY8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JSONDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JSONDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = MN2C8KDDY8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JSONDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

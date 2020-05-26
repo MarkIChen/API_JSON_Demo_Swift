@@ -11,13 +11,30 @@ import SwiftUI
 struct DetailView: View {
     let displayResult: Result
     
+    var image: URLImage
+    
     var body: some View {
-        Text(displayResult.title)
+        ScrollView {
+            VStack(alignment: .leading) {
+                self.image
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 400)
+                Divider()
+                Text("id: \(displayResult.id)")
+                Divider()
+                Text("title: \(displayResult.title)")
+                
+                Spacer()
+            }.padding(10)
+        }
     }
     
     init(information: Result) {
         self.displayResult = information
+        image = URLImage(url: displayResult.thumbnailUrl)
     }
+    
+    
 }
 
 struct DetailView_Previews: PreviewProvider {
